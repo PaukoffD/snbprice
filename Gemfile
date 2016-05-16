@@ -47,3 +47,40 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'roo'
+gem 'materialize-sass', '~> 0.97.5'
+gem 'devise', '~> 3.5', '>= 3.5.6'
+gem 'rolify'
+gem 'cancancan', '~> 1.10'
+gem 'rails_admin', '~> 0.8.1'
+gem 'jquery-turbolinks'
+gem 'figaro'
+gem 'annotate'
+gem 'paperclip'
+gem 'faker'
+gem 'will_paginate'
+gem 'will_paginate-materialize'
+
+group :development, :test do
+  #DB
+  gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
+  gem 'guard-rspec', '~> 4.6', '>= 4.6.4'
+  gem 'sqlite3'
+end
+
+group :test do
+  gem 'selenium-webdriver', '~> 2.53'
+  gem 'capybara', '~> 2.6', '>= 2.6.2'
+  gem 'libnotify', '~> 0.9.1'
+  gem 'factory_girl_rails'
+  gem 'shoulda'
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
+  gem 'launchy'
+end
+
+group :development do
+  gem 'spring', '~> 1.6', '>= 1.6.4'
+  gem 'pry-rails', :group => :development
+end
+
+gem 'rails-jquery-autocomplete'
