@@ -1,0 +1,80 @@
+@import "materialize";
+
+.transparent {
+  background-color: transparent;
+}
+
+//Navbar
+
+nav {
+  box-shadow: none;
+  ul {
+    a {
+      font-size: 16px;
+      color: #26a69a;
+    }
+  }
+}
+
+.profile-image {
+    height: 50px !important;
+    vertical-align: middle;
+    border: 3px solid #80cbc4;
+}
+
+// Autocomplete
+
+.ui-widget-content {
+  margin-top: -1rem;
+  @extend .z-depth-1;
+
+  li {
+    color: #26a69a;
+    font-size: 1.2rem;
+    padding: 1rem;
+      &:hover {
+        background: #eee;
+        cursor: pointer;
+      }
+    }
+ }
+
+ui-widget-content {
+  @extend .select-dropdown;
+}
+
+.ui-state-focus {
+  @extend li:hover;
+}
+
+.ui-helper-hidden-accessible {
+  display: none;
+}
+
+.pagination a li.active {
+  color: #fff;
+}
+
+.vcenter {
+  
+  float: none;
+  vertical-align: middle;
+}
+.container-fluid{
+  height: 700px;
+  display:table;
+  width: 100%;
+  padding: 0;
+}
+ 
+.row-fluid {
+  height:100%; 
+  display:table-cell; 
+  vertical-align: middle;
+}
+ 
+.centering {
+	
+  float:none;
+  margin:0 auto;
+}
