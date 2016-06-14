@@ -49,6 +49,7 @@ gem 'paperclip'
 gem 'faker'
 gem 'will_paginate'
 gem 'will_paginate-materialize'
+gem 'simple_form'
 
 group :development, :test do
   #DB

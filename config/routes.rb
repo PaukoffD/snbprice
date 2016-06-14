@@ -5,4 +5,7 @@ Rails.application.routes.draw do
 
   root 'main#index'
   get 'menu', to: 'goods#menu'
+  get 'about' => 'goods#about'
+  get 'adduser' => 'goods#adduser'
+  get 'addprice' => 'goods#addprice'
 end

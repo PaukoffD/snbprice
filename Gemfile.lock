@@ -299,6 +299,9 @@ GEM
     shoulda-context (1.2.1)
     shoulda-matchers (2.8.0)
       activesupport (>= 3.0.0)
+    simple_form (3.2.1)
+      actionpack (> 4, < 5.1)
+      activemodel (> 4, < 5.1)
     slop (3.6.0)
     spreadsheet (1.0.4)
       ruby-ole (>= 1.0)
@@ -362,7 +365,7 @@ DEPENDENCIES
   materialize-sass (~> 0.97.5)
   paperclip
   pry-rails
-  rails (= 4.2.4)
+  rails
   rails-jquery-autocomplete
   rails_admin (~> 0.8.1)
   rolify
@@ -372,6 +375,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   selenium-webdriver (~> 2.53)
   shoulda
+  simple_form
   spring (~> 1.6, >= 1.6.4)
   sqlite3
   turbolinks
