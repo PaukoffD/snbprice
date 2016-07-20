@@ -1,5 +1,6 @@
 class GoodsController < ApplicationController
   before_action :set_good, only: [:show, :edit, :update, :destroy]
+  skip_before_filter :require_no_authentication, only: [:new, :create, :cancel ]
 
   # GET /goods
   # GET /goods.json
@@ -15,6 +16,10 @@ class GoodsController < ApplicationController
    def menu
    end
 
+   def adduser
+    @user=User.new
+   # @company=Company.new
+   end
   # GET /goods/new
   def new
     
@@ -95,5 +100,9 @@ class GoodsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def good_params
       params.fetch(:good, {})
+    end
+
+    def user_params
+      params.require(:user).permit(:name, :email, :password, :password_confirmation)
     end
 end
